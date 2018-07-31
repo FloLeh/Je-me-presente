@@ -1,0 +1,5 @@
+<p>Bienvenue sur ta page <%= User.find_by(username: params['id']).username%> !</p>
+</br>
+</br>
+<p>Voici ta super bio :  <%= User.find_by(username: params['id']).bio %></p>
+<a href="/">Retour à l'accueil</a>
